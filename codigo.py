@@ -529,35 +529,19 @@ def sistema():
 
             if opcao == "1":
 
-                menuConteudo(
-                    "conteudo/filmes.txt",
-                    "filmes",
-                    usuario
-                )
+                menuConteudo("conteudo/filmes.txt", "filmes", usuario)
 
             elif opcao == "2":
 
-                menuConteudo(
-                    "conteudo/series.txt",
-                    "series",
-                    usuario
-                )
+                menuConteudo("conteudo/series.txt", "series", usuario)
 
             elif opcao == "3":
 
-                verLista(
-                    "users/favoritos.txt",
-                    usuario,
-                    "Seus favoritos"
-                )
+                verLista("users/favoritos.txt", usuario, "Seus favoritos")
 
             elif opcao == "4":
 
-                verLista(
-                    "users/assistir_mais_tarde.txt",
-                    usuario,
-                    "Assistir mais tarde"
-                )
+                verLista("users/assistir_mais_tarde.txt", usuario, "Assistir mais tarde")
 
             elif opcao == "0":
 
