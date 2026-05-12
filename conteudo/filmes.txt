@@ -1,0 +1,41 @@
+300;Ação;1h57;Gerard Butler, Lena Headey, David Wenham;2006;18+
+Annabelle;Terror;1h39;Annabelle Wallis, Ward Horton, Alfre Woodard;2014;14+
+As Branquelas;Comédia;1h49;Shawn Wayans, Marlon Wayans, Terry Crews;2004;12+
+Batman (2022);Ação;2h56;Robert Pattinson, Zoë Kravitz, Paul Dano;2022;14+
+Batman: O Cavaleiro das Trevas;Ação;2h32;Christian Bale, Heath Ledger, Aaron Eckhart;2008;12+
+Capitão América: Guerra Civil;Ação;2h27;Chris Evans, Robert Downey Jr., Sebastian Stan;2016;12+
+Como Eu Era Antes de Você;Romance;1h50;Emilia Clarke, Sam Claflin, Janet McTeer;2016;12+
+Deadpool;Comédia;1h48;Ryan Reynolds, Morena Baccarin, T.J. Miller;2016;18+
+Diário de uma Paixão;Romance;2h03;Ryan Gosling, Rachel McAdams, James Garner;2004;12+
+Divertida Mente;Animação;1h35;Amy Poehler, Phyllis Smith, Bill Hader;2015;L
+Frozen;Animação;1h42;Kristen Bell, Idina Menzel, Jonathan Groff;2013;L
+Gente Grande;Comédia;1h42;Adam Sandler, Kevin James, Chris Rock;2010;12+
+Gladiador;Ação;2h35;Russell Crowe, Joaquin Phoenix, Connie Nielsen;2000;16+
+Homem de Ferro;Ação;2h06;Robert Downey Jr., Gwyneth Paltrow, Jeff Bridges;2008;12+
+Homem-Aranha: Sem Volta Para Casa;Ação;2h28;Tom Holland, Zendaya, Benedict Cumberbatch;2021;12+
+Invocação do Mal;Terror;1h52;Patrick Wilson, Vera Farmiga, Lili Taylor;2013;14+
+Invocação do Mal 2;Terror;2h14;Patrick Wilson, Vera Farmiga, Madison Wolfe;2016;14+
+It: A Coisa;Terror;2h15;Jaeden Martell, Bill Skarsgård, Finn Wolfhard;2017;16+
+It: Capítulo 2;Terror;2h49;James McAvoy, Jessica Chastain, Bill Skarsgård;2019;16+
+John Wick;Ação;1h41;Keanu Reeves, Michael Nyqvist, Alfie Allen;2014;16+
+John Wick 2;Ação;2h02;Keanu Reeves, Common, Laurence Fishburne;2017;16+
+Kung Fu Panda;Animação;1h32;Jack Black, Angelina Jolie, Dustin Hoffman;2008;L
+La La Land;Romance;2h08;Ryan Gosling, Emma Stone, John Legend;2016;12+
+Madagascar;Animação;1h26;Ben Stiller, Chris Rock, David Schwimmer;2005;L
+Missão Impossível: Fallout;Ação;2h27;Tom Cruise, Henry Cavill, Rebecca Ferguson;2018;14+
+Orgulho e Preconceito;Romance;2h09;Keira Knightley, Matthew Macfadyen, Donald Sutherland;2005;L
+O Exorcista;Terror;2h02;Ellen Burstyn, Linda Blair, Max von Sydow;1973;18+
+Os Incríveis;Animação;1h55;Craig T. Nelson, Holly Hunter, Samuel L. Jackson;2004;L
+Procurando Nemo;Animação;1h40;Albert Brooks, Ellen DeGeneres, Alexander Gould;2003;L
+Se Beber, Não Case!;Comédia;1h40;Bradley Cooper, Ed Helms, Zach Galifianakis;2009;16+
+Shrek;Animação;1h30;Mike Myers, Eddie Murphy, Cameron Diaz;2001;L
+Shrek 2;Animação;1h33;Mike Myers, Eddie Murphy, Antonio Banderas;2004;L
+Thor: Ragnarok;Ação;2h10;Chris Hemsworth, Tom Hiddleston, Cate Blanchett;2017;12+
+Titanic;Romance;3h14;Leonardo DiCaprio, Kate Winslet, Billy Zane;1997;12+
+Todo Mundo em Pânico;Comédia;1h28;Anna Faris, Marlon Wayans, Regina Hall;2000;16+
+Toy Story;Animação;1h21;Tom Hanks, Tim Allen, Don Rickles;1995;L
+Toy Story 3;Animação;1h43;Tom Hanks, Tim Allen, Joan Cusack;2010;L
+Velozes e Furiosos;Ação;2h10;Vin Diesel, Paul Walker, Michelle Rodriguez;2001;14+
+Velozes e Furiosos 5;Ação;2h10;Vin Diesel, Paul Walker, Dwayne Johnson;2011;14+
+Velozes e Furiosos 7;Ação;2h17;Vin Diesel, Paul Walker, Jason Statham;2015;14+
+Vingadores: Ultimato;Ação;3h02;Robert Downey Jr., Chris Evans, Scarlett Johansson;2019;12+

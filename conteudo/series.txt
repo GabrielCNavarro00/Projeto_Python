@@ -1,0 +1,38 @@
+13 Reasons Why;Drama;4 temporadas;Dylan Minnette, Katherine Langford, Alisha Boe;2017;16+
+Arrow;Ação;8 temporadas;Stephen Amell, Katie Cassidy, David Ramsey;2012;14+
+Avatar: A Lenda de Aang;Animação;3 temporadas;Zach Tyler, Mae Whitman, Jack De Sena;2005;L
+Better Call Saul;Drama;6 temporadas;Bob Odenkirk, Rhea Seehorn, Jonathan Banks;2015;16+
+Black Mirror;Ficção;6 temporadas;Bryce Dallas Howard, Jon Hamm, Daniel Kaluuya;2011;16+
+BoJack Horseman;Animação;6 temporadas;Will Arnett, Alison Brie, Aaron Paul;2014;16+
+Breaking Bad;Drama;5 temporadas;Bryan Cranston, Aaron Paul, Anna Gunn;2008;16+
+Brooklyn Nine-Nine;Comédia;8 temporadas;Andy Samberg, Terry Crews, Andre Braugher;2013;12+
+Dark;Ficção;3 temporadas;Louis Hofmann, Lisa Vicari, Andreas Pietschmann;2017;16+
+Daredevil;Ação;3 temporadas;Charlie Cox, Vincent D'Onofrio, Deborah Ann Woll;2015;16+
+Euphoria;Drama;2 temporadas;Zendaya, Hunter Schafer, Jacob Elordi;2019;18+
+Everybody Hates Chris;Comédia;4 temporadas;Tyler James Williams, Terry Crews, Tichina Arnold;2005;12+
+Friends;Comédia;10 temporadas;Jennifer Aniston, Courteney Cox, Matthew Perry;1994;12+
+Game of Thrones;Fantasia;8 temporadas;Emilia Clarke, Kit Harington, Peter Dinklage;2011;18+
+Hora de Aventura;Animação;10 temporadas;Jeremy Shada, John DiMaggio, Tom Kenny;2010;L
+House of the Dragon;Fantasia;1 temporada;Emma D'Arcy, Matt Smith, Olivia Cooke;2022;18+
+How I Met Your Mother;Comédia;9 temporadas;Josh Radnor, Neil Patrick Harris, Cobie Smulders;2005;12+
+Invincible;Animação;2 temporadas;Steven Yeun, J.K. Simmons, Sandra Oh;2021;16+
+La Casa de Papel;Ação;5 temporadas;Álvaro Morte, Úrsula Corberó, Itziar Ituño;2017;16+
+Loki;Ação;2 temporadas;Tom Hiddleston, Owen Wilson, Sophia Di Martino;2021;12+
+Modern Family;Comédia;11 temporadas;Ed O'Neill, Sofia Vergara, Ty Burrell;2009;12+
+Narcos;Drama;3 temporadas;Wagner Moura, Pedro Pascal, Boyd Holbrook;2015;16+
+Narcos: Mexico;Drama;3 temporadas;Diego Luna, Michael Peña, Scoot McNairy;2018;16+
+Peaky Blinders;Drama;6 temporadas;Cillian Murphy, Paul Anderson, Helen McCrory;2013;16+
+Prison Break;Drama;5 temporadas;Wentworth Miller, Dominic Purcell, Sarah Wayne Callies;2005;14+
+Rick and Morty;Animação;7 temporadas;Justin Roiland, Chris Parnell, Spencer Grammer;2013;16+
+Stranger Things;Ficção;4 temporadas;Millie Bobby Brown, Finn Wolfhard, David Harbour;2016;14+
+Suits;Drama;9 temporadas;Gabriel Macht, Patrick J. Adams, Meghan Markle;2011;12+
+The Big Bang Theory;Comédia;12 temporadas;Jim Parsons, Johnny Galecki, Kaley Cuoco;2007;12+
+The Boys;Ação;4 temporadas;Karl Urban, Jack Quaid, Antony Starr;2019;18+
+The Crown;Drama;6 temporadas;Claire Foy, Olivia Colman, Imelda Staunton;2016;14+
+The Flash;Ação;9 temporadas;Grant Gustin, Candice Patton, Danielle Panabaker;2014;12+
+The Mandalorian;Ação;3 temporadas;Pedro Pascal, Carl Weathers, Giancarlo Esposito;2019;12+
+The Office;Comédia;9 temporadas;Steve Carell, John Krasinski, Jenna Fischer;2005;12+
+The Walking Dead;Terror;11 temporadas;Andrew Lincoln, Norman Reedus, Melissa McBride;2010;16+
+The Witcher;Fantasia;3 temporadas;Henry Cavill, Anya Chalotra, Freya Allan;2019;16+
+Two and a Half Men;Comédia;12 temporadas;Charlie Sheen, Jon Cryer, Ashton Kutcher;2003;14+
+WandaVision;Ação;1 temporada;Elizabeth Olsen, Paul Bettany, Kathryn Hahn;2021;12+
