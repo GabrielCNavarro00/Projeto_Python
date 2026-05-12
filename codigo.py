@@ -27,35 +27,9 @@ def gerarID():
 
             pass
 
-        # se não existir, retorna o ID
         if not existe:
 
             return novoID
-
-def cadastroUsuario():
-
-    nome = input("\nDigite seu nome: ")
-    email = input("Digite seu email: ")
-    senha = input("Digite sua senha: ")
-
-    if usuarioExistente(email):
-
-        print("Email já cadastrado!")
-        return
-
-    idUsuario = gerarID()
-
-    with open("users/usuarios.txt", "a", encoding="utf-8") as arquivo:
-
-        arquivo.write(
-            idUsuario + ";" +
-            nome + ";" +
-            email + ";" +
-            senha + "\n"
-        )
-
-    print("Cadastro realizado!")
-    print("Seu ID é:", idUsuario)
 
 
 def usuarioExistente(email):
@@ -83,6 +57,26 @@ def usuarioExistente(email):
             return True
 
     return False
+
+def cadastroUsuario():
+
+    nome = input("\nDigite seu nome: ")
+    email = input("Digite seu email: ")
+    senha = input("Digite sua senha: ")
+
+    if usuarioExistente(email):
+
+        print("Email já cadastrado!")
+        return
+
+    idUsuario = gerarID()
+
+    with open("users/usuarios.txt", "a", encoding="utf-8") as arquivo:
+
+        arquivo.write(idUsuario + ";" + nome + ";" + email + ";" + senha + "\n")
+
+    print("Cadastro realizado!")
+    print("Seu ID é:", idUsuario)
 
 
 def validacaoLogin(email, senha):
