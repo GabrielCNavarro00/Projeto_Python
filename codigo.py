@@ -387,6 +387,7 @@ def sistema():
     while True:
 
         if not logado:
+            print("\nBem-Vindo(a) à FEI-TV")
             print("\n1 - Cadastro")
             print("2 - Login")
             print("0 - Sair")
@@ -407,7 +408,7 @@ def sistema():
                 break
 
         else:
-
+            print("\nSelecione um dos itens abaixo:")
             print("\n1 - Filmes")
             print("2 - Séries")
             print("3 - Ver favoritos")
