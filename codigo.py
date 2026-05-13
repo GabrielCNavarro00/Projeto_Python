@@ -10,16 +10,12 @@ def gerarID():
 
         try:
             with open("users/usuarios.txt", "r", encoding="utf-8") as arquivo:
-
                 linhas = arquivo.readlines()
 
                 for linha in linhas:
-
                     info = linha.strip().split(";")
 
-                    # verifica se o ID já existe
                     if len(info) == 4 and info[0] == novoID:
-
                         existe = True
 
         except FileNotFoundError:
@@ -32,7 +28,6 @@ def gerarID():
 def usuarioExistente(email):
 
     try:
-
         with open("users/usuarios.txt", "r", encoding="utf-8") as arquivo:
             linhas = arquivo.readlines()
 
@@ -67,11 +62,9 @@ def cadastroUsuario():
     print("Cadastro realizado!")
     print("Seu ID é:", idUsuario)
 
-
 def validacaoLogin(email, senha):
 
     try:
-
         with open("users/usuarios.txt", "r", encoding="utf-8") as arquivo:
             linhas = arquivo.readlines()
 
@@ -228,6 +221,7 @@ def gerenciarFavoritos(conteudo, usuario):
         removerDaLista("users/assistir_mais_tarde.txt", usuario)
 
 #================MENU================#
+
 def menuConteudo(caminho, tipo, usuario):
 
     conteudos = carregarConteudo(caminho)
@@ -253,7 +247,6 @@ def menuConteudo(caminho, tipo, usuario):
             escolha = int(input("Escolha um número (0 para voltar): "))
 
             if escolha == 0:
-
                 continue
 
             indice = escolha - 1
@@ -277,7 +270,6 @@ def menuConteudo(caminho, tipo, usuario):
                 gerenciarFavoritos(conteudoEscolhido, usuario)
 
         elif opcao == "2":
-
             busca = input("Digite o nome: ").lower()
 
             resultados = []
@@ -315,7 +307,6 @@ def menuConteudo(caminho, tipo, usuario):
             resposta = input("\nDeseja interagir? (s/n): ")
 
             if resposta.lower() == "s":
-
                 gerenciarFavoritos(conteudoEscolhido, usuario)
 
         elif opcao == "3":
@@ -374,7 +365,6 @@ def menuConteudo(caminho, tipo, usuario):
             break
 
         else:
-
             print("Opção inválida.")
 
 
