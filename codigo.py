@@ -55,11 +55,12 @@ def usuarioExistente(email):
     return False
 
 def cadastroUsuario():
-
+    
     nome = input("\nDigite seu nome: ")
     email = input("Digite seu email: ")
     senha = input("Digite sua senha: ")
-
+    
+    
     if usuarioExistente(email):
         print("Email já cadastrado!")
         return
@@ -83,10 +84,11 @@ def validacaoLogin(email, senha):
     return False
 
 def loginUsuario():
-
+    
     email = input("Digite seu email: ")
     senha = input("Digite sua senha: ")
-
+    
+    
     resultado = validacaoLogin(email, senha)
 
     if resultado:
@@ -97,6 +99,7 @@ def loginUsuario():
         return False
 
 #================CONTEUDO================#
+
 def carregarConteudo(caminho):
 
     conteudos = []
@@ -146,7 +149,7 @@ def verLista(nomeArquivo, usuario, titulo):
 
         if not encontrou:
             print("Lista vazia.")
-
+            
     except FileNotFoundError:
         print("Lista vazia.")
 
@@ -163,18 +166,14 @@ def removerDaLista(nomeArquivo, usuario):
         for linha in linhas:
             info = linha.strip().split(";")
 
-            if not (
-                info[0] == usuario["id"]
-                and
-                info[2].lower() == nomeRemover.lower()
-            ):
+            if not (info[0] == usuario["id"] and info[2].lower() == nomeRemover.lower()):
                 novasLinhas.append(linha)
 
         with open(nomeArquivo, "w", encoding="utf-8") as arquivo:
             arquivo.writelines(novasLinhas)
 
         print("Removido com sucesso!")
-
+        
     except FileNotFoundError:
         print("Lista não existe.")
 
@@ -319,7 +318,6 @@ def menuConteudo(caminho, tipo, usuario):
             resposta = input("\nDeseja interagir? (s/n): ")
 
             if resposta.lower() == "s":
-
                 gerenciarFavoritos(conteudoEscolhido, usuario)
 
         elif opcao == "3":
@@ -384,9 +382,7 @@ def menuConteudo(caminho, tipo, usuario):
             break
 
         else:
-
             print("Opção inválida.")
-
 
 #================SISTEMA PRINCIPAL================#
 def sistema():
@@ -397,7 +393,8 @@ def sistema():
     while True:
 
         if not logado:
-            print("\nBem-Vindo(a) à FEI-TV")
+            
+            print("\nBem-Vindo(a) à FEI-TV, digite uma das opções abaixo para começar:")
             print("\n1 - Cadastro")
             print("2 - Login")
             print("0 - Sair")
@@ -418,6 +415,8 @@ def sistema():
                 break
 
         else:
+            
+            print("\nBem-vindo(a) à FEI-TV,", usuario["nome"])
             print("\nSelecione um dos itens abaixo:")
             print("\n1 - Filmes")
             print("2 - Séries")
@@ -426,7 +425,6 @@ def sistema():
             print("0 - Logout")
 
             opcao = input("Escolha: ")
-
             if opcao == "1":
                 menuConteudo("conteudo/filmes.txt", "filmes", usuario)
 
