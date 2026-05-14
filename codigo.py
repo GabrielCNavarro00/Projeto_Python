@@ -3,45 +3,55 @@ import random
 
 def gerarID():
 
+    usuarios = carregarUsuario()
+
     while True:
-
+        
         novoID = str(random.randint(1000, 9999))
-        existe = False
-
-        try:
-            with open("users/usuarios.txt", "r", encoding="utf-8") as arquivo:
-                linhas = arquivo.readlines()
-
-                for linha in linhas:
-                    info = linha.strip().split(";")
-
-                    if len(info) == 4 and info[0] == novoID:
-                        existe = True
-
-        except FileNotFoundError:
-
-            pass
-
-        if not existe:
+        existeID = False
+        
+        for usuario in usuarios:
+            if usuario["id"] == novoID:
+                existeID = True
+                break
+                
+        if not existeID:
             return novoID
-
-def usuarioExistente(email):
+        
+def carregarUsuario():
+    
+    usuarios = []
 
     try:
         with open("users/usuarios.txt", "r", encoding="utf-8") as arquivo:
             linhas = arquivo.readlines()
-
+            
     except FileNotFoundError:
-        return False
-
+        return usuarios
+    
     for linha in linhas:
         info = linha.strip().split(";")
+
         if len(info) != 4:
             continue
+        
+        usuario = {
+            "id": info[0],
+            "nome": info[1],
+            "email": info[2],
+            "senha": info[3]
+        }
+        
+        usuarios.append(usuario)
+    return usuarios
 
-        if info[2] == email:
+def usuarioExistente(email):
+
+    usuarios = carregarUsuario()
+    
+    for usuario in usuarios:
+        if usuario["email"] == email:
             return True
-
     return False
 
 def cadastroUsuario():
@@ -62,23 +72,14 @@ def cadastroUsuario():
     print("Cadastro realizado!")
     print("Seu ID é:", idUsuario)
 
+
 def validacaoLogin(email, senha):
 
-    try:
-        with open("users/usuarios.txt", "r", encoding="utf-8") as arquivo:
-            linhas = arquivo.readlines()
+    usuarios = carregarUsuario()
 
-    except FileNotFoundError:
-        return False
-
-    for linha in linhas:
-        info = linha.strip().split(";")
-        if len(info) != 4:
-            continue
-
-        if info[2] == email and info[3] == senha:
-            return info[0]
-
+    for usuario in usuarios:
+        if usuario["email"] == email and usuario["senha"] == senha:
+            return usuario 
     return False
 
 def loginUsuario():
@@ -131,18 +132,21 @@ def verLista(nomeArquivo, usuario, titulo):
     try:
         with open(nomeArquivo, "r", encoding="utf-8") as arquivo:
             linhas = arquivo.readlines()
+
         print(f"\n{titulo}:")
 
         encontrou = False
 
         for linha in linhas:
             info = linha.strip().split(";")
-            if info[0] == usuario:
-                print("-", info[1])
+            if info[0] == usuario["id"]:
+                print("-", info[2])
+
                 encontrou = True
 
         if not encontrou:
             print("Lista vazia.")
+
     except FileNotFoundError:
         print("Lista vazia.")
 
@@ -153,19 +157,24 @@ def removerDaLista(nomeArquivo, usuario):
     try:
         with open(nomeArquivo, "r", encoding="utf-8") as arquivo:
             linhas = arquivo.readlines()
+
         novasLinhas = []
+
         for linha in linhas:
             info = linha.strip().split(";")
-            # mantém apenas o que NÃO será removido
+
             if not (
-                info[0] == usuario and
-                info[1].lower() == nomeRemover.lower()
+                info[0] == usuario["id"]
+                and
+                info[2].lower() == nomeRemover.lower()
             ):
                 novasLinhas.append(linha)
 
         with open(nomeArquivo, "w", encoding="utf-8") as arquivo:
             arquivo.writelines(novasLinhas)
+
         print("Removido com sucesso!")
+
     except FileNotFoundError:
         print("Lista não existe.")
 
@@ -190,22 +199,22 @@ def gerenciarFavoritos(conteudo, usuario):
 
     if opcao == "1":
         with open("users/curtidas.txt", "a", encoding="utf-8") as arquivo:
-            arquivo.write(usuario + ";" + nome + "\n")
+            arquivo.write(usuario["id"] + ";" + usuario["nome"] + ";" + nome + "\n")
         print("Conteúdo curtido!")
 
     elif opcao == "2":
         with open("users/descurtidas.txt", "a", encoding="utf-8") as arquivo:
-            arquivo.write(usuario + ";" + nome + "\n")
+            arquivo.write(usuario["id"] + ";" + usuario["nome"] + ";" + nome + "\n")
         print("Conteúdo descurtido!")
 
     elif opcao == "3":
         with open("users/favoritos.txt", "a", encoding="utf-8") as arquivo:
-            arquivo.write(usuario + ";" + nome + "\n")
+            arquivo.write(usuario["id"] + ";" + usuario["nome"] + ";" + nome + "\n")
         print("Conteúdo favoritado!")
 
     elif opcao == "4":
         with open("users/assistir_mais_tarde.txt", "a", encoding="utf-8") as arquivo:
-            arquivo.write(usuario + ";" + nome + "\n")
+            arquivo.write(usuario["id"] + ";" + usuario["nome"] + ";" + nome + "\n")
         print("Adicionado à lista!")
 
     elif opcao == "5":
@@ -221,7 +230,6 @@ def gerenciarFavoritos(conteudo, usuario):
         removerDaLista("users/assistir_mais_tarde.txt", usuario)
 
 #================MENU================#
-
 def menuConteudo(caminho, tipo, usuario):
 
     conteudos = carregarConteudo(caminho)
@@ -232,6 +240,8 @@ def menuConteudo(caminho, tipo, usuario):
         print("1 - Ver todos")
         print("2 - Buscar por nome")
         print("3 - Buscar por categoria")
+        print("4 - Ver lista de favoritos")
+        print("5 - Ver lista de assitir mais tarde")
         print("0 - Voltar")
 
         opcao = input("Escolha: ")
@@ -247,6 +257,7 @@ def menuConteudo(caminho, tipo, usuario):
             escolha = int(input("Escolha um número (0 para voltar): "))
 
             if escolha == 0:
+
                 continue
 
             indice = escolha - 1
@@ -270,6 +281,7 @@ def menuConteudo(caminho, tipo, usuario):
                 gerenciarFavoritos(conteudoEscolhido, usuario)
 
         elif opcao == "2":
+
             busca = input("Digite o nome: ").lower()
 
             resultados = []
@@ -307,6 +319,7 @@ def menuConteudo(caminho, tipo, usuario):
             resposta = input("\nDeseja interagir? (s/n): ")
 
             if resposta.lower() == "s":
+
                 gerenciarFavoritos(conteudoEscolhido, usuario)
 
         elif opcao == "3":
@@ -360,11 +373,18 @@ def menuConteudo(caminho, tipo, usuario):
 
             if resposta.lower() == "s":
                 gerenciarFavoritos(conteudoEscolhido, usuario)
+                
+        elif opcao == "4":
+            verLista("users/favoritos.txt", usuario, "Seus favoritos")
+
+        elif opcao == "5":
+            verLista("users/assistir_mais_tarde.txt", usuario, "Assistir mais tarde")
 
         elif opcao == "0":
             break
 
         else:
+
             print("Opção inválida.")
 
 
